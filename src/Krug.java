@@ -1,11 +1,11 @@
 public class Krug {
 
 
-    private String naziv; //naziv i radijus su 2 polja / ili karakteristike
+    private String naziv;
     private double radijus;
 
-    public Krug(String krug, double radijus) {
-        this.naziv = krug;
+    public Krug(String krug11, double radijus) {
+        this.naziv = krug11;
         this.radijus = radijus;
     }
 
@@ -18,7 +18,7 @@ public class Krug {
     }
 
     public double getRadijus() {
-        return radijus;
+        return this.radijus;
     }
 
     public void setRadijus(double radijus) {

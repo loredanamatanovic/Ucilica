@@ -10,10 +10,11 @@ public class Trokut {
         this.naziv = naziv;
         this.stranicaA = stranicaA;
         this.stranicaB = stranicaB;
+        this.stranicaC = stranicaC;
     }
 
     public String getNaziv() {
-        return naziv;
+        return this.naziv = naziv;
     }
 
     public void setNaziv(String naziv) {
@@ -21,22 +22,23 @@ public class Trokut {
     }
 
     public double getStranicaA() {
-        return stranicaA;
+        return this.stranicaA;
     }
 
-    public void setStranicaA(double stranicaA) {
+    public double setStranicaA(double stranicaA) {
+        return this.stranicaA = stranicaA;
     }
 
     public double getStranicaB() {
-        return stranicaB;
+        return this.stranicaB;
     }
 
     public double setStranicaB(double stranicaB) {
-        return stranicaB;
+        return this.stranicaB = stranicaB;
     }
 
     public double getStranicaC() {
-        return stranicaC;
+        return this.stranicaC;
     }
 
     public void setStranicaC(double stranicaC) {

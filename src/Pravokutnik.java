@@ -11,31 +11,32 @@ public class Pravokutnik {
     }
 
     public String getNaziv() {
-        return naziv;
+        return this.naziv;
     }
 
     public void setNaziv(String naziv) {
+        this.naziv = naziv;
 
     }
 
     public double getStranicaA() {
-        return stranicaA;
+        return this.stranicaA;
     }
 
     public void setStranicaA(double stranicaA) {
+        this.stranicaA = stranicaA;
     }
 
     public double getStranicaB() {
-        return stranicaB;
+        return this.stranicaB;
     }
 
-    public double setStranicaB(double stranicaB) {
-        return stranicaB;
+    public void setStranicaB(double stranicaB) {
+        this.stranicaB = stranicaB;
     }
-
-
 
 }
+
 
 
 
