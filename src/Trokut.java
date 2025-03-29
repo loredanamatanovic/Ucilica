@@ -14,27 +14,26 @@ public class Trokut {
     }
 
     public String getNaziv() {
-        return this.naziv = naziv;
+        return this.naziv;
     }
 
     public void setNaziv(String naziv) {
-
+        this.naziv = naziv;
     }
 
     public double getStranicaA() {
         return this.stranicaA;
     }
 
-    public double setStranicaA(double stranicaA) {
-        return this.stranicaA = stranicaA;
+    public void setStranicaA(double stranicaA) {
+        this.stranicaA = stranicaA;
     }
 
     public double getStranicaB() {
         return this.stranicaB;
     }
-
-    public double setStranicaB(double stranicaB) {
-        return this.stranicaB = stranicaB;
+    public void setStranicaB(double stranicaB) {
+        this.stranicaB = stranicaB;
     }
 
     public double getStranicaC() {
