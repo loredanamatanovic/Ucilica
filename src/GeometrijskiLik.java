@@ -1,26 +1,30 @@
 
-abstract class GeometrijskiLik extends Krug {
+public abstract class GeometrijskiLik {
+
     private String naziv;
 
 
-    public GeometrijskiLik(String krug11, double radijus) {
-        super(krug11, radijus);
-        }
+    public GeometrijskiLik(String naziv) {
+        this.naziv = naziv;
+    }
 
-        public String GeometrijskiLik(String naziv) {
-            this.naziv = naziv;
-            return naziv;
+    public String getNaziv() {
+        return this.naziv;
+    }
+
+    public void setNaziv(String naziv) {
+        this.naziv = naziv;
+
+    }
+
+    abstract public double opseg();
 
 
-            abstract public double opseg ()
+    abstract public double povrsina();
 
 
-            abstract public double povrsina ();
-
-
-            public String toString () {
-                return "Naziv : " + this.naziv + " , Opseg: " + opseg() + " , Povrsina " + povrsina();
-            }
-        }
+    public String toString() {
+        return "Naziv : " + this.naziv + " , Opseg: " + opseg() + " , Povrsina " + povrsina();
     }
 }
+
