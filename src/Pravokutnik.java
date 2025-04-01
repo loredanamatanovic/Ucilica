@@ -1,23 +1,12 @@
-public class Pravokutnik {
+public class Pravokutnik extends GeometrijskiLik {
 
-    private String naziv;
     private double stranicaA;
     private double stranicaB;
 
-    public Pravokutnik(String naziv, double stranicaA, double stranicaB) {
-        this.naziv = naziv;
-        this.stranicaA = stranicaA;
-        this.stranicaB = stranicaB;
+    public Pravokutnik (String naziv, double stranicaA, double stranicaB) {
+        super(naziv);
     }
 
-    public String getNaziv() {
-        return this.naziv;
-    }
-
-    public void setNaziv(String naziv) {
-        this.naziv = naziv;
-
-    }
 
     public double getStranicaA() {
         return this.stranicaA;
@@ -28,13 +17,22 @@ public class Pravokutnik {
     }
 
     public double getStranicaB() {
-        return this.stranicaB;
+    return this.stranicaB;
     }
 
     public void setStranicaB(double stranicaB) {
         this.stranicaB = stranicaB;
     }
 
+    @Override
+    public double opseg() {
+         return 2 * this.stranicaA + 2 * this.stranicaB;
+    }
+
+    @Override
+    public double povrsina() {
+        return  stranicaA * stranicaB;
+    }
 }
 
 
