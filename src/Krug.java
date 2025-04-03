@@ -3,7 +3,7 @@ public class Krug extends GeometrijskiLik {
 
     private double radijus;
 
-    public Krug() {
+    public Krug(String naziv, double radijus) {  //u konstruktor ide
         super(naziv);
         this.radijus = radijus;
 

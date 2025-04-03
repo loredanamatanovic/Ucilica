@@ -1,15 +1,16 @@
 import java.util.ArrayList;
 
-public abstract class Ucilica implements Comparable<GeometrijskiLik> {
+public abstract class Ucilica {
 
-    private ArrayList<GeometrijskiLik> likovi;
+    public ArrayList<GeometrijskiLik> likovi;
 
     public Ucilica() {
-
+        this.likovi = new ArrayList<>();
 
     }
 
-        }
+
+}
 
 
 
