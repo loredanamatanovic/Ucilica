@@ -17,14 +17,14 @@ public abstract class GeometrijskiLik {
 
     }
 
-    abstract public double opseg();
+    public abstract double opseg();
 
 
     abstract public double povrsina();
 
-
+    @Override
     public String toString() {
         return "Naziv : " + this.naziv + " , Opseg: " + opseg() + " , Povrsina " + povrsina();
     }
-}
 
+}
